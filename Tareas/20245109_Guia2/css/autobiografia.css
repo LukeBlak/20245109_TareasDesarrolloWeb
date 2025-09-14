@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Merriweather", serif;
+}
+
+header {
+    background-color: cyan;
+    width: 100%;
+    height: 10vh;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+header h1 {
+    text-align: center;
+}
+
+header nav .menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 10px;
+}
+
+.menu a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+section #miHistoria {
+    width: 90%;
+    margin: 18vh auto 4vh;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+section #academico {
+    width: 90%;
+    margin: 4vh auto 4vh;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+section #edutech {
+    width: 90%;
+    margin: 4vh auto 4vh;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+section #musica {
+    width: 90%;
+    margin: 4vh auto 4vh;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    position: relative;
+}
+
+.carrusel1 .tarjeta {
+    height: 400px;
+    width: 20%;
+    border: 2px solid;
+    padding: 1%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.tarjeta img {
+    height: 40%;
+    width: 90%;
+    margin: 5px auto;
+    display: block;
+}
