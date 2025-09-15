@@ -7,7 +7,7 @@
 }
 
 header {
-    background-color: cyan;
+    background-color: rgb(0, 205, 205);
     width: 100%;
     height: 10vh;
     padding: 20px;
@@ -26,6 +26,7 @@ header nav .menu {
     justify-content: center;
     gap: 20px;
     padding-top: 10px;
+    overflow: hidden;
 }
 
 .menu a{
@@ -33,51 +34,313 @@ header nav .menu {
     text-decoration: none;
 }
 
-section #miHistoria {
+body {
+    background-color: rgba(235, 218, 183, 0.783);
+}
+
+article {
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.topPart {
     width: 90%;
+    margin: 2vh auto ;
+    padding: 10px;
+    background-color: #bcd5e7;
+    border-radius: 10px;
+}
+
+section #miHistoria {
+    width: 95%;
     margin: 18vh auto 4vh;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     position: relative;
+    background-color: #966B9D;
+    border-radius: 10px;
+}
+
+#miHistoria h2 {
+    width: 50%;
+    position: relative;
+    top: 15vh;
+    padding-left: 10px;
+}
+
+#miHistoria img {
+    width: 200px;
+    border-radius: 30px;
+    padding: 15px 20px 10px 15px;
+}
+
+section #miHistoria div {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-right: 80px;
+}
+
+section #miHistoria div p:first-child::first-letter {
+    color: #F2B880;
 }
 
 section #academico {
-    width: 90%;
+    width: 95%;
     margin: 4vh auto 4vh;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     position: relative;
+    background-color: #966B9D;
+    border-radius: 10px;
+}
+
+#academico h2 {
+    width: 50%;
+    position: relative;
+    top: 12vh;
+    padding-left: 10px;
+}
+
+#academico img{
+    width: 300px;
+    border-radius: 30px;
+    padding: 15px 10px 20px 15px;
+}
+
+section #academico div {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: 80px;
+}
+
+section #miHistoria div p:first-child::first-letter {
+    color: #F2B880;
 }
 
 section #edutech {
-    width: 90%;
+    width: 95%;
     margin: 4vh auto 4vh;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     position: relative;
+    background-color: #966B9D;
+    border-radius: 10px;
 }
 
-section #musica {
+#edutech h2 {
+    width: 50%;
+    position: relative;
+    top: 13vh;
+    padding-left: 10px;
+}
+
+#edutech img {
+    width: 300px;
+    border-radius: 30px;
+    padding: 15px 20px 10px 15px;
+}
+
+section #edutech div {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-right: 80px;
+}
+
+section #musica, #libros {
     width: 90%;
     margin: 4vh auto 4vh;
-    display: flex;
-    flex-wrap: wrap;
     overflow: hidden;
-    position: relative;
+    text-align: center;
+}
+
+.carrusel1, .carrusel2, .carrusel3 {
+    display: flex;
+    overflow: hidden;
+    flex-wrap: nowrap;
+    gap: 10px;
+    padding: 15px 0;
+    margin: 20px 0;
 }
 
 .carrusel1 .tarjeta {
+    flex: none;
+    width: 250px;
     height: 400px;
-    width: 20%;
-    border: 2px solid;
-    padding: 1%;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
     box-sizing: border-box;
     overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: white; 
 }
 
+.carrusel2 .tarjeta {
+    flex: none;
+    width: 250px;
+    height: 400px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: white; 
+}
+
+.carrusel3 .tarjeta {
+    flex: none;
+    width: 290px;
+    height: 500px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: white; 
+}
+
+.carrusel1 .tarjeta:hover, .carrusel2 .tarjeta:hover, .carrusel3 .tarjeta:hover{
+    background-color: #F2B880;
+}
+
+.carrusel1 .tarjeta, .carrusel2 .tarjeta, .carrusel3 .tarjeta{
+    background-color: #C98686;
+}
+
+
 .tarjeta img {
-    height: 40%;
+    height: 50%;
     width: 90%;
     margin: 5px auto;
     display: block;
+}
+
+
+.titulosMusica, .tituloLiteratura {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.musica, .literatura {
+    text-align: justify;
+    margin-top: 10px;
+    font-size: 0.9em;
+    padding: 10px;
+}
+
+#musica, #libros {
+    display: block;
+    width: 90%;
+    margin: 4vh auto;
+    flex-wrap: wrap;
+}
+
+#musica h2, #libros h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+#musica h4, #libros h4 {
+    margin: 30px 0 15px 0;
+    color: #555;
+    border-bottom: 2px solid cyan;
+    padding-bottom: 5px;
+}
+
+#intereses {
+    width: 90%;
+    margin: 4vh auto;
+    padding: 20px;
+    background-color: #E7CFBC;
+    border-radius: 10px;
+}
+
+#intereses h3 {
+    text-align: center;
+    color: #966B9D;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    padding: 10px;
+    border-bottom: 3px solid #F2B880;
+}
+
+#intereses table {
+    width: 100%;
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#intereses thead {
+    background-color: #966B9D;
+    color: white;
+}
+
+#intereses th {
+    padding: 15px;
+    text-align: left;
+    font-weight: bold;
+}
+
+#intereses td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #E7CFBC;
+}
+
+#intereses tbody tr:hover {
+    background-color: #F2B880;
+}
+
+.imagenesTabla {
+    width: 100px;
+    text-align: center;
+}
+
+.imagenesTabla img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    border: 2px solid #C98686;
+}
+
+#intereses a {
+    color: #966B9D;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#intereses a:hover {
+    color: #00FFFF;
+    text-decoration: underline;
+}
+
+.videojuegos, .anime, .fandoms {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.videojuegos h3, .anime h3, .fandoms h3 {
+    color: #C98686;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+footer {
+    background-color: #966B9D;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
 }
