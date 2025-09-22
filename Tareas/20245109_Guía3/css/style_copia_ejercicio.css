@@ -14,12 +14,18 @@ header {
     background: #16A085;
     height: 130px;
     overflow: hidden;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
 }
 
 footer {
     margin-top: 20px;
     background: #16A085;
     height: 50px;
+    position: sticky;
+    bottom: 0;
+    z-index: 10;
 }
 
 header div, footer div {
@@ -45,6 +51,7 @@ section {
     flex-wrap: wrap;
     overflow: hidden;
     position: relative;
+    z-index: 5;
 }
 
 section article {
@@ -78,5 +85,5 @@ section article:nth-child(2) {
     position: static;
     left: 100px;
     top: 50px;
-    display: none;
+    visibility: hidden;
 }
