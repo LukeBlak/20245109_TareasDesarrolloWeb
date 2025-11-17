@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/ejercicio.css">
+    <script type="module" src="js/ejercicio.js" defer></script>
+    <title>Expresiones regulares</title>
+</head>
+
+<body>
+    <h1>Formulario con expresiones regulares</h1>
+    <div class="formulario">
+        <form id="form">
+            <div class="datosFomulario">
+                <label for="idTxtCarnet">Carnet de estudiante:</label>
+                <input type="text" id="idTxtCarnet">
+            </div>
+            <div class="datosFomulario">
+                <label for="idTxtNombre">Nombre del estudiante:</label>
+                <input type="text" id="idTxtNombre">
+            </div>
+            <div class="datosFomulario">
+                <label for="idTxtDui">DUI del estudiante:</label>
+                <input type="text" id="idTxtDui">
+            </div>
+            <div class="datosFomulario">
+                <label for="idTxtNit">NIT del estudiante:</label>
+                <input type="text" id="idTxtNit">
+            </div>
+            <div class="datosFomulario">
+                <label for="idTxtFecha">Fecha de nacimiento del estudiante:</label>
+                <input type="date" id="idTxtFecha" pattern="\d(2)-\d(2)-\d(4)">
+            </div>
+            <div class="datosFomulario">
+                <label for="idTxtCorreo">Correo electronico del estudiante:</label>
+                <input type="text" id="idTxtCorreo">
+            </div>
+            <div class="datosFomulario">
+                <label for="idNumEdad">Edada del estudiante:</label>
+                <input type="number" id="idNumEdad" min="0" max="100">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
